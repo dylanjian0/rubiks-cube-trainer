@@ -7,10 +7,10 @@ export default function Navbar(){
         {title:"About",link:"/about"},
     ]
     return(
-        <div className="flex items-center bg-blue-500 h-14">
+        <div className="flex border-b-2 border-gray-500 items-center bg-blue-300 text-black h-14">
             <div className="text-xl flex justify-center w-full space-x-6">
-                {links.map((link) =>(
-                    <Link key={link.title} href={link.link}>{link.title}</Link>
+                {links.map((item) =>(
+                    <Link key={item.title} href={item.link}>{item.title}</Link>
                 ))}
             </div>
         </div>
